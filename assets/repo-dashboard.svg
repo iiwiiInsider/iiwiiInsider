@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1314" viewBox="0 0 960 1314" role="img" aria-labelledby="title description">
+  <title id="title">Public repository activity</title>
+  <desc id="description">Latest commits and GitHub Actions status for public repositories.</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .heading { fill: #f0f6fc; font-size: 22px; font-weight: 700; }
+    .column { fill: #8b949e; font-size: 12px; font-weight: 600; letter-spacing: .08em; }
+    .name { fill: #58a6ff; font-size: 14px; font-weight: 700; }
+    .detail { fill: #8b949e; font-size: 12px; }
+    .status { font-size: 11px; font-weight: 700; }
+    .status-dot { animation: blink 1.8s ease-in-out infinite; }
+    @keyframes blink { 50% { opacity: .35; } }
+    a { text-decoration: none; }
+  </style>
+  <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
+  <text x="24" y="38" class="heading">REPOSITORY ACTIVITY // 25 PUBLIC REPOS</text>
+  <text x="32" y="70" class="column">REPOSITORY / LATEST COMMIT</text>
+  <text x="604" y="70" class="column">DATE</text>
+  <text x="790" y="70" class="column">LATEST ACTION</text>
+  
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider">
+      <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="107" class="name">iiwiiInsider</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/418983c0051d4483ca6efa42d6d864947f4b98c5">
+      <text x="32" y="124" class="detail">418983c Initial commit</text>
+    </a>
+    <text x="604" y="116" class="detail">2026-10-09</text>
+    <circle cx="790" cy="111" r="5" fill="#8b949e" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
+      <text x="804" y="116" class="status" fill="#8b949e">NO RUNS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/AdBlock_GrammarCheck_Chrome_Extention">
+      <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="155" class="name">AdBlock_GrammarCheck_Chrome_Extention</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/AdBlock_GrammarCheck_Chrome_Extention/commit/ed6d580198c10490d71229c52a36db9e30bc98e4">
+      <text x="32" y="172" class="detail">ed6d580 Added more common corrections and code.</text>
+    </a>
+    <text x="604" y="164" class="detail">2026-10-08</text>
+    <circle cx="790" cy="159" r="5" fill="#8b949e" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/AdBlock_GrammarCheck_Chrome_Extention/actions">
+      <text x="804" y="164" class="status" fill="#8b949e">NO RUNS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Property_Owner_Mandate_Creation">
+      <rect x="16" y="186" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="203" class="name">Property_Owner_Mandate_Creation</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Property_Owner_Mandate_Creation/commit/7abdef5b5259bdf4deb42ce06943d34b22acc43c">
+      <text x="32" y="220" class="detail">7abdef5 Security Fixes.</text>
+    </a>
+    <text x="604" y="212" class="detail">2026-08-12</text>
+    <circle cx="790" cy="207" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Property_Owner_Mandate_Creation/actions">
+      <text x="804" y="212" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Online_Web_Application_CV">
+      <rect x="16" y="234" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="251" class="name">Online_Web_Application_CV</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Online_Web_Application_CV/commit/1ac1b6dd48008e580450b5edfc95724c3e39a798">
+      <text x="32" y="268" class="detail">1ac1b6d Update Qualification Description.</text>
+    </a>
+    <text x="604" y="260" class="detail">2026-08-26</text>
+    <circle cx="790" cy="255" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Online_Web_Application_CV/actions">
+      <text x="804" y="260" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Python_Snippets">
+      <rect x="16" y="282" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="299" class="name">Python_Snippets</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Python_Snippets/commit/eccbc232ec0b8afbb134632789d9a7ae44e1d4cd">
+      <text x="32" y="316" class="detail">eccbc23 Python script and html with IDE config in...</text>
+    </a>
+    <text x="604" y="308" class="detail">2026-08-19</text>
+    <circle cx="790" cy="303" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Python_Snippets/actions">
+      <text x="804" y="308" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Email_Platform_added_prevented_Phishing">
+      <rect x="16" y="330" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="347" class="name">Email_Platform_added_prevented_Phishing</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Email_Platform_added_prevented_Phishing/commit/93f0c1d490bc77fdcc5582624738e00e125726ee">
+      <text x="32" y="364" class="detail">93f0c1d Security Fixes.</text>
+    </a>
+    <text x="604" y="356" class="detail">2026-08-12</text>
+    <circle cx="790" cy="351" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Email_Platform_added_prevented_Phishing/actions">
+      <text x="804" y="356" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings">
+      <rect x="16" y="378" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="395" class="name">EngineringAndGraphicalDrawings</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings/commit/657bdf8f9710629738aa96a966bf1197a55b2102">
+      <text x="32" y="412" class="detail">657bdf8 Switch to PDF viewer: embed PDFs in ifram...</text>
+    </a>
+    <text x="604" y="404" class="detail">2026-07-22</text>
+    <circle cx="790" cy="399" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings/actions">
+      <text x="804" y="404" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Business_Finance_Tracker_Tool">
+      <rect x="16" y="426" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="443" class="name">Business_Finance_Tracker_Tool</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Business_Finance_Tracker_Tool/commit/12738a1cbcea1834ff72711ee69d649e66721d49">
+      <text x="32" y="460" class="detail">12738a1 YML Modified.</text>
+    </a>
+    <text x="604" y="452" class="detail">2026-07-22</text>
+    <circle cx="790" cy="447" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Business_Finance_Tracker_Tool/actions">
+      <text x="804" y="452" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Endpoint_Backend_Frontend_Market_API_Trend_Managed_Trader">
+      <rect x="16" y="474" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="491" class="name">Endpoint_Backend_Frontend_Market_API_Trend_Managed_Trader</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Endpoint_Backend_Frontend_Market_API_Trend_Managed_Trader/commit/4947fecfab8e4f0a8be82a70708fe3aef120a8c7">
+      <text x="32" y="508" class="detail">4947fec YML Modified.</text>
+    </a>
+    <text x="604" y="500" class="detail">2026-07-22</text>
+    <circle cx="790" cy="495" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Endpoint_Backend_Frontend_Market_API_Trend_Managed_Trader/actions">
+      <text x="804" y="500" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/HTML_Capstone_Project">
+      <rect x="16" y="522" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="539" class="name">HTML_Capstone_Project</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/HTML_Capstone_Project/commit/42ce5ff1d8afa7fbc7dac0a14a3707e2e859c14e">
+      <text x="32" y="556" class="detail">42ce5ff YML Modified.</text>
+    </a>
+    <text x="604" y="548" class="detail">2026-07-22</text>
+    <circle cx="790" cy="543" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/HTML_Capstone_Project/actions">
+      <text x="804" y="548" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/HTML_Portfolio">
+      <rect x="16" y="570" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="587" class="name">HTML_Portfolio</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/HTML_Portfolio/commit/7be1b26cedb5238bd712e8f80125774d146cabe2">
+      <text x="32" y="604" class="detail">7be1b26 YML Modified.</text>
+    </a>
+    <text x="604" y="596" class="detail">2026-07-22</text>
+    <circle cx="790" cy="591" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/HTML_Portfolio/actions">
+      <text x="804" y="596" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Meme">
+      <rect x="16" y="618" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="635" class="name">Meme</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Meme/commit/4371deb50b8c2f92834a5ede2583d00e62cfeaf6">
+      <text x="32" y="652" class="detail">4371deb YML Modified.</text>
+    </a>
+    <text x="604" y="644" class="detail">2026-07-22</text>
+    <circle cx="790" cy="639" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Meme/actions">
+      <text x="804" y="644" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Service_Skillset_Contact_And_Preview">
+      <rect x="16" y="666" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="683" class="name">Service_Skillset_Contact_And_Preview</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Service_Skillset_Contact_And_Preview/commit/4484ffca031cb0dd145b977cf56f0b520173a4fe">
+      <text x="32" y="700" class="detail">4484ffc Security Issues Fixed.</text>
+    </a>
+    <text x="604" y="692" class="detail">2026-08-03</text>
+    <circle cx="790" cy="687" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Service_Skillset_Contact_And_Preview/actions">
+      <text x="804" y="692" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Saas_Login_Manager">
+      <rect x="16" y="714" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="731" class="name">Saas_Login_Manager</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Saas_Login_Manager/commit/7286bf1d37d1b41b25a2491ac912714603d133ae">
+      <text x="32" y="748" class="detail">7286bf1 Security Issue fixes.</text>
+    </a>
+    <text x="604" y="740" class="detail">2026-08-03</text>
+    <circle cx="790" cy="735" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Saas_Login_Manager/actions">
+      <text x="804" y="740" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Marketplace_Trading_Platform">
+      <rect x="16" y="762" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="779" class="name">Marketplace_Trading_Platform</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Marketplace_Trading_Platform/commit/06bea24d68f7d71ec7a25f59abdd1b9f4e8ca36e">
+      <text x="32" y="796" class="detail">06bea24 Security Fixes</text>
+    </a>
+    <text x="604" y="788" class="detail">2026-08-03</text>
+    <circle cx="790" cy="783" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Marketplace_Trading_Platform/actions">
+      <text x="804" y="788" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/3D_Viewable_Home_Designer">
+      <rect x="16" y="810" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="827" class="name">3D_Viewable_Home_Designer</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/3D_Viewable_Home_Designer/commit/2090d77bb28ce40ac9c1c9c03e0ba3e37a66373d">
+      <text x="32" y="844" class="detail">2090d77 Security Fixes</text>
+    </a>
+    <text x="604" y="836" class="detail">2026-08-03</text>
+    <circle cx="790" cy="831" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/3D_Viewable_Home_Designer/actions">
+      <text x="804" y="836" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Face_ID_Saas_Authentication">
+      <rect x="16" y="858" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="875" class="name">Face_ID_Saas_Authentication</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Face_ID_Saas_Authentication/commit/68c6b8bea4cbe7e5f6b881d90cee7fa97ddd05e4">
+      <text x="32" y="892" class="detail">68c6b8b Add File changes into MAin files.</text>
+    </a>
+    <text x="604" y="884" class="detail">2026-08-03</text>
+    <circle cx="790" cy="879" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Face_ID_Saas_Authentication/actions">
+      <text x="804" y="884" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Chess_Move_Guide">
+      <rect x="16" y="906" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="923" class="name">Chess_Move_Guide</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Chess_Move_Guide/commit/f6a632397609edba51ebea4620718f5da39a10cc">
+      <text x="32" y="940" class="detail">f6a6323 Merge pull request #1 from iiwiiInsider/d...</text>
+    </a>
+    <text x="604" y="932" class="detail">2026-10-08</text>
+    <circle cx="790" cy="927" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Chess_Move_Guide/actions">
+      <text x="804" y="932" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Dev_Full_Stack_Modules">
+      <rect x="16" y="954" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="971" class="name">Dev_Full_Stack_Modules</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Dev_Full_Stack_Modules/commit/a9b13b1f5cd33ddbaf91a819dc0675a9574e32e8">
+      <text x="32" y="988" class="detail">a9b13b1 Updated Packages</text>
+    </a>
+    <text x="604" y="980" class="detail">2026-08-06</text>
+    <circle cx="790" cy="975" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Dev_Full_Stack_Modules/actions">
+      <text x="804" y="980" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Concept_Banking_App_UI">
+      <rect x="16" y="1002" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="1019" class="name">Concept_Banking_App_UI</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Concept_Banking_App_UI/commit/62c44206603c438ab3c5e22487ee666eddae3639">
+      <text x="32" y="1036" class="detail">62c4420 Merge pull request #2 from iiwiiInsider/d...</text>
+    </a>
+    <text x="604" y="1028" class="detail">2026-10-08</text>
+    <circle cx="790" cy="1023" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Concept_Banking_App_UI/actions">
+      <text x="804" y="1028" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Scheduled_Py_Scripts">
+      <rect x="16" y="1050" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="1067" class="name">Scheduled_Py_Scripts</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Scheduled_Py_Scripts/commit/7eb3376377fa04d8d9b472a6079437497285bca8">
+      <text x="32" y="1084" class="detail">7eb3376 Update birthdays.csv</text>
+    </a>
+    <text x="604" y="1076" class="detail">2026-09-21</text>
+    <circle cx="790" cy="1071" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Scheduled_Py_Scripts/actions">
+      <text x="804" y="1076" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Chrome_Password_Manager_Extention">
+      <rect x="16" y="1098" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="1115" class="name">Chrome_Password_Manager_Extention</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Chrome_Password_Manager_Extention/commit/cbd7653403d76f1f24912da5cb8940e415ab3477">
+      <text x="32" y="1132" class="detail">cbd7653 Added inline suggestions, and vault to no...</text>
+    </a>
+    <text x="604" y="1124" class="detail">2026-10-07</text>
+    <circle cx="790" cy="1119" r="5" fill="#8b949e" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Chrome_Password_Manager_Extention/actions">
+      <text x="804" y="1124" class="status" fill="#8b949e">NO RUNS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Real_Estate_Listing_Template">
+      <rect x="16" y="1146" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="1163" class="name">Real_Estate_Listing_Template</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Real_Estate_Listing_Template/commit/9885a98798d5a2f7ed0472868c75f440de39a008">
+      <text x="32" y="1180" class="detail">9885a98 Login flow camera bug fix.</text>
+    </a>
+    <text x="604" y="1172" class="detail">2026-10-08</text>
+    <circle cx="790" cy="1167" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Real_Estate_Listing_Template/actions">
+      <text x="804" y="1172" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Agency_Tools">
+      <rect x="16" y="1194" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="1211" class="name">Agency_Tools</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/Agency_Tools/commit/4936e4e51a7cb313b384089300f25d106e0b3582">
+      <text x="32" y="1228" class="detail">4936e4e Merge pull request #4 from iiwiiInsider/d...</text>
+    </a>
+    <text x="604" y="1220" class="detail">2026-10-08</text>
+    <circle cx="790" cy="1215" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/Agency_Tools/actions">
+      <text x="804" y="1220" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/JavaScript_Peices">
+      <rect x="16" y="1242" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="1259" class="name">JavaScript_Peices</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/JavaScript_Peices/commit/422cd9df7b608264c9a63030c38fdac954ae6572">
+      <text x="32" y="1276" class="detail">422cd9d IDE config Integrity change.</text>
+    </a>
+    <text x="604" y="1268" class="detail">2026-09-01</text>
+    <circle cx="790" cy="1263" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/JavaScript_Peices/actions">
+      <text x="804" y="1268" class="status" fill="#3fb950">SUCCESS</text>
+    </a>
+</svg>
