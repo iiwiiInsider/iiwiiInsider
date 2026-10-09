@@ -29,12 +29,12 @@ jobs:
 
       - name: Generate profile activity graphics
         env:
-          PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          PROFILE_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/update-profile.mjs
 
       - name: Commit updated graphics
         run: |
-          git add assets/repo-dashboard.svg assets/commit-pulse.svg
+          git add assets/repo-dashboard.svg assets/commit-pulse.svg assets/btc-dashboard.svg
           if git diff --cached --quiet; then
             echo "Profile graphics are already up to date."
           else

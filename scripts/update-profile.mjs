@@ -21,6 +21,20 @@ async function github(path) {
   return response.json();
 }
 
+async function fetchText(url, source) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/json, application/rss+xml, application/xml, text/xml",
+      "User-Agent": `${username}-profile-activity`,
+    },
+  });
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new Error(`${source} returned ${response.status}: ${detail}`);
+  }
+  return response.text();
+}
+
 function xml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -28,6 +42,70 @@ function xml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&apos;");
+}
+
+function decodeXml(value) {
+  return value
+    .replace(/&#(x[0-9a-f]+|\d+);/gi, (_, code) =>
+      String.fromCodePoint(
+        code[0].toLowerCase() === "x"
+          ? Number.parseInt(code.slice(1), 16)
+          : Number.parseInt(code, 10),
+      ),
+    )
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&apos;", "'")
+    .replaceAll("&amp;", "&");
+}
+
+async function getLatestBtcDailyCandle() {
+  const text = await fetchText(
+    "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=2",
+    "Binance BTC/USDT daily candles",
+  );
+  const candles = JSON.parse(text);
+  if (!Array.isArray(candles)) {
+    throw new Error("Binance BTC/USDT daily candle response was not an array.");
+  }
+
+  const candle = candles
+    .filter((entry) => Array.isArray(entry) && Number(entry[6]) < Date.now())
+    .at(-1);
+  if (!candle) {
+    throw new Error("Binance did not return a completed BTC/USDT daily candle.");
+  }
+
+  return {
+    date: new Date(Number(candle[0])).toISOString().slice(0, 10),
+    open: Number(candle[1]),
+    close: Number(candle[4]),
+  };
+}
+
+async function getLatestBitcoinNews() {
+  const feedUrl =
+    "https://news.google.com/rss/search?q=bitcoin&hl=en-US&gl=US&ceid=US:en";
+  const feed = await fetchText(feedUrl, "Google News Bitcoin RSS");
+  const articles = [...feed.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map(
+    ([, item]) => {
+      const getTag = (tag) => {
+        const match = item.match(new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
+        return match ? decodeXml(match[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim()) : "";
+      };
+      return {
+        title: getTag("title"),
+        url: getTag("link"),
+        source: getTag("source"),
+        publishedAt: getTag("pubDate"),
+      };
+    },
+  );
+
+  return articles
+    .filter((article) => article.title && article.url)
+    .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))[0] ?? null;
 }
 
 function shortDate(value) {
@@ -161,6 +239,67 @@ function dashboardSvg(repositories) {
 `;
 }
 
+function btcDashboardSvg(candle, article) {
+  const formatPrice = (value) =>
+    new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 2,
+    }).format(value);
+  const titleLines = article
+    ? (article.title.match(/.{1,52}(?:\s|$)/g) ?? [article.title])
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .slice(0, 2)
+    : ["No recent Bitcoin news article found."];
+  if (article && titleLines.join(" ").length < article.title.length) {
+    titleLines[1] = `${titleLines[1].replace(/\.*$/, "")}...`;
+  }
+  const articleTitle = titleLines
+    .map((line, index) => `<text x="500" y="${142 + index * 20}" class="news-title">${xml(line)}</text>`)
+    .join("");
+  const newsMeta = article
+    ? `${article.source || "Google News"} · ${Number.isNaN(Date.parse(article.publishedAt)) ? "" : new Date(article.publishedAt).toISOString().replace("T", " ").slice(0, 16)} UTC`
+    : "Google News RSS · BTC monitor news source";
+  const articleLink = article
+    ? `<a href="${xml(article.url)}">${articleTitle}</a>`
+    : articleTitle;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
+  <title id="title">Bitcoin daily open, close, and latest news</title>
+  <desc id="description">BTC/USDT completed daily candle for ${xml(candle.date)}: open ${xml(formatPrice(candle.open))}, close ${xml(formatPrice(candle.close))}.${article ? ` Latest article: ${xml(article.title)}` : " No recent news article was found."}</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
+    .muted { fill: #8b949e; font-size: 11px; }
+    .label { fill: #8b949e; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+    .price { fill: #f0f6fc; font-size: 22px; font-weight: 700; }
+    .news-title { fill: #58a6ff; font-size: 13px; font-weight: 600; }
+    .coin-mark { fill: #fff; font-family: Arial, sans-serif; font-size: 27px; font-weight: 700; }
+    a { text-decoration: none; }
+  </style>
+  <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
+  <text x="24" y="34" class="heading">BITCOIN // BTC/USDT DAILY</text>
+  <circle cx="57" cy="103" r="25" fill="#f7931a"/>
+  <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
+  <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
+  <text x="96" y="116" class="muted">${xml(candle.date)} · Binance BTC/USDT daily candle</text>
+  <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
+    <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
+  </a>
+  <text x="32" y="164" class="label">OPEN</text>
+  <text x="32" y="194" class="price">${xml(formatPrice(candle.open))}</text>
+  <text x="252" y="164" class="label">CLOSE</text>
+  <text x="252" y="194" class="price">${xml(formatPrice(candle.close))}</text>
+  <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
+  <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
+  ${articleLink}
+  <text x="500" y="190" class="muted">${xml(newsMeta)}</text>
+  <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
+</svg>
+`;
+}
+
 function commitPulseSvg(events) {
   const days = Array.from({ length: 30 }, (_, index) => {
     const date = new Date();
@@ -236,16 +375,21 @@ async function main() {
 
   const selected = repositories.slice(0, 25);
   const activity = await mapWithConcurrency(selected, 5, getLatestForRepository);
-  const events = await getRecentPublicEvents();
+  const [events, btcCandle, btcNews] = await Promise.all([
+    getRecentPublicEvents(),
+    getLatestBtcDailyCandle(),
+    getLatestBitcoinNews(),
+  ]);
 
   await mkdir("assets", { recursive: true });
   await Promise.all([
     writeFile("assets/repo-dashboard.svg", dashboardSvg(activity)),
     writeFile("assets/commit-pulse.svg", commitPulseSvg(events)),
+    writeFile("assets/btc-dashboard.svg", btcDashboardSvg(btcCandle, btcNews)),
   ]);
 
   console.log(
-    `Updated activity graphics for ${activity.length} repositories and ${events.length} recent public events.`,
+    `Updated activity graphics for ${activity.length} repositories, ${events.length} recent public events, and the BTC/USDT candle for ${btcCandle.date}${btcNews ? " with a news article" : " without a news article"}.`,
   );
 }
 

@@ -22,13 +22,13 @@
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="107" class="name">iiwiiInsider</text>
     </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/ddb055dd913d4e29d4a3e2c2a97460f429c2928a">
-      <text x="32" y="124" class="detail">ddb055d Setup for Profile enhancment.</text>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/7bfd42c1f5980d9684c7a65777fdae58f9d46393">
+      <text x="32" y="124" class="detail">7bfd42c chore: refresh profile activity</text>
     </a>
     <text x="604" y="116" class="detail">2026-10-09</text>
-    <circle cx="790" cy="111" r="5" fill="#d29922" class="status-dot"/>
+    <circle cx="790" cy="111" r="5" fill="#3fb950" class="status-dot"/>
     <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
-      <text x="804" y="116" class="status" fill="#d29922">IN PROGRESS</text>
+      <text x="804" y="116" class="status" fill="#3fb950">SUCCESS</text>
     </a>
     <a href="https://github.com/iiwiiInsider/AdBlock_GrammarCheck_Chrome_Extention">
       <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
