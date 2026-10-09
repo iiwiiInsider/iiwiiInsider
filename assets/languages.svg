@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="206" viewBox="0 0 960 206" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="434" viewBox="0 0 960 434" role="img" aria-labelledby="title description">
   <title id="title">Programming language usage across public repositories</title>
-  <desc id="description">Language data has not been generated yet.</desc>
+  <desc id="description">All 14 detected languages across 28 public repositories, totaling 100 percent by GitHub-reported language bytes.</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 19px; font-weight: 700; }
@@ -9,9 +9,65 @@
     .percentage { fill: #f0f6fc; font-size: 13px; font-weight: 700; }
   </style>
   <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
-  <text x="24" y="36" class="heading">LANGUAGE MIX // AWAITING DATA</text>
-  <text x="24" y="61" class="muted">Language shares will appear after the profile workflow fetches GitHub's byte totals.</text>
+  <text x="24" y="36" class="heading">LANGUAGE MIX // 100%</text>
+  <text x="24" y="61" class="muted">All 14 detected languages · 28 public repositories · share of GitHub-reported code bytes</text>
   <clipPath id="bar-clip"><rect x="24" y="94" width="912" height="16" rx="8"/></clipPath>
-  <g clip-path="url(#bar-clip)"></g>
-  <text x="32" y="150" class="muted">Waiting for the profile workflow to calculate language percentages.</text>
+  <g clip-path="url(#bar-clip)"><rect x="24.00" y="94" width="335.18" height="16" fill="#f1e05a"/><rect x="359.18" y="94" width="290.18" height="16" fill="#e34c26"/><rect x="649.36" y="94" width="108.55" height="16" fill="#f778ba"/><rect x="757.92" y="94" width="84.31" height="16" fill="#563d7c"/><rect x="842.22" y="94" width="46.69" height="16" fill="#3572a5"/><rect x="888.91" y="94" width="16.41" height="16" fill="#79c0ff"/><rect x="905.32" y="94" width="14.49" height="16" fill="#b07219"/><rect x="919.81" y="94" width="6.45" height="16" fill="#3178c6"/><rect x="926.26" y="94" width="6.06" height="16" fill="#f778ba"/><rect x="932.32" y="94" width="2.69" height="16" fill="#ffa657"/><rect x="935.01" y="94" width="0.41" height="16" fill="#3fb950"/><rect x="935.41" y="94" width="0.31" height="16" fill="#79c0ff"/><rect x="935.72" y="94" width="0.15" height="16" fill="#384d54"/><rect x="935.87" y="94" width="0.13" height="16" fill="#89e051"/></g>
+  
+    <circle cx="32" cy="138" r="5" fill="#f1e05a"/>
+    <text x="46" y="142" class="language">JavaScript</text>
+    <text x="372" y="142" class="percentage">36.8%</text>
+    <text x="422" y="142" class="bytes">1.2 MB</text>
+    <circle cx="32" cy="176" r="5" fill="#e34c26"/>
+    <text x="46" y="180" class="language">HTML</text>
+    <text x="372" y="180" class="percentage">31.8%</text>
+    <text x="422" y="180" class="bytes">1.0 MB</text>
+    <circle cx="32" cy="214" r="5" fill="#f778ba"/>
+    <text x="46" y="218" class="language">EJS</text>
+    <text x="372" y="218" class="percentage">11.9%</text>
+    <text x="422" y="218" class="bytes">383.6 KB</text>
+    <circle cx="32" cy="252" r="5" fill="#563d7c"/>
+    <text x="46" y="256" class="language">CSS</text>
+    <text x="372" y="256" class="percentage">9.2%</text>
+    <text x="422" y="256" class="bytes">297.9 KB</text>
+    <circle cx="32" cy="290" r="5" fill="#3572a5"/>
+    <text x="46" y="294" class="language">Python</text>
+    <text x="372" y="294" class="percentage">5.1%</text>
+    <text x="422" y="294" class="bytes">165.0 KB</text>
+    <circle cx="32" cy="328" r="5" fill="#79c0ff"/>
+    <text x="46" y="332" class="language">C++</text>
+    <text x="372" y="332" class="percentage">1.8%</text>
+    <text x="422" y="332" class="bytes">58.0 KB</text>
+    <circle cx="32" cy="366" r="5" fill="#b07219"/>
+    <text x="46" y="370" class="language">Java</text>
+    <text x="372" y="370" class="percentage">1.6%</text>
+    <text x="422" y="370" class="bytes">51.2 KB</text>
+    <circle cx="496" cy="138" r="5" fill="#3178c6"/>
+    <text x="510" y="142" class="language">TypeScript</text>
+    <text x="836" y="142" class="percentage">0.7%</text>
+    <text x="886" y="142" class="bytes">22.8 KB</text>
+    <circle cx="496" cy="176" r="5" fill="#f778ba"/>
+    <text x="510" y="180" class="language">MQL4</text>
+    <text x="836" y="180" class="percentage">0.7%</text>
+    <text x="886" y="180" class="bytes">21.4 KB</text>
+    <circle cx="496" cy="214" r="5" fill="#ffa657"/>
+    <text x="510" y="218" class="language">MQL5</text>
+    <text x="836" y="218" class="percentage">0.3%</text>
+    <text x="886" y="218" class="bytes">9.5 KB</text>
+    <circle cx="496" cy="252" r="5" fill="#3fb950"/>
+    <text x="510" y="256" class="language">C</text>
+    <text x="836" y="256" class="percentage">0.1%</text>
+    <text x="886" y="256" class="bytes">1.4 KB</text>
+    <circle cx="496" cy="290" r="5" fill="#79c0ff"/>
+    <text x="510" y="294" class="language">Solidity</text>
+    <text x="836" y="294" class="percentage">0.0%</text>
+    <text x="886" y="294" class="bytes">1.1 KB</text>
+    <circle cx="496" cy="328" r="5" fill="#384d54"/>
+    <text x="510" y="332" class="language">Dockerfile</text>
+    <text x="836" y="332" class="percentage">0.0%</text>
+    <text x="886" y="332" class="bytes">532 B</text>
+    <circle cx="496" cy="366" r="5" fill="#89e051"/>
+    <text x="510" y="370" class="language">Shell</text>
+    <text x="836" y="370" class="percentage">0.0%</text>
+    <text x="886" y="370" class="bytes">458 B</text>
 </svg>

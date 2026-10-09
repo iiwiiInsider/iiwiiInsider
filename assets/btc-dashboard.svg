@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-08: open $83,276.10, close $81,683.80. Latest article: ZX Squared Capital’s Zheng Called the Last Bitcoin Bottom and This Time, He Says $80,000 Is the Final Window - FF News</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-08: open $83,276.10, close $81,683.80. Latest article: MARA transfers $81.1 million in bitcoin (BTC) to Galaxy Digital as strategy pivots to AI - CoinDesk</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -26,7 +26,7 @@
   <text x="252" y="194" class="price">$81,683.80</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYkJ2NVhXOEVwSlFrQXFjczlwMV9CVWtGWEZBRW5YdGZpTFJsTTY0cUpHeDZpLU9YTlZDOURKTEJBNUs1WjZ5Mk5NeVJxRUJUSkdGWDJEUFl4cnJEaVlUaVhrV25PcXJPcUhWVmJJdS1ZbVVIdEJIekpBcnpDOVItUTJ6M2NIVTh0YjNJV2hxc2F2aDVNYUF0WFN0SGRMSkZQcFc3d3c3WkdDWGNwRDh5UVBQdFZoRmNSR28wYUpMTDdtaGlPVWdPVlZBQVpMLVAyaVdJcHJHWFo0QQ?oc=5"><text x="500" y="142" class="news-title">ZX Squared Capital’s Zheng Called the Last Bitcoin</text><text x="500" y="162" class="news-title">Bottom and This Time, He Says $80,000 Is the Final...</text></a>
-  <text x="500" y="190" class="muted">FF News · 2026-10-09 08:45 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNc2c5WmcwbkZfR29ReXdDc2VaUE9zanEzMXV4aTZFU1hhZHBzbEJFWWtwZTNEUnNpaVdmSUxnN09nWWJ4Y2ZMNGdoQzVDQ0M4aFlQb2pHT29CamZRblN3eFlMQnI0SlhNMVlyeTFyWnJ1aEo0RkdVSnVUMEJKYkRlbnYwRFh0YzA2VGZvSHVBVTh0VVQ3VzUxS1FVZ25sbVVpajZPQ1VZWVpxclpmc1YybGNTU01YS0xydWFRalB1LURkd0pfN21V?oc=5"><text x="500" y="142" class="news-title">MARA transfers $81.1 million in bitcoin (BTC) to</text><text x="500" y="162" class="news-title">Galaxy Digital as strategy pivots to AI - CoinDesk</text></a>
+  <text x="500" y="190" class="muted">CoinDesk · 2026-10-09 09:08 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
