@@ -22,8 +22,8 @@
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="107" class="name">iiwiiInsider</text>
     </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/ddb055dd913d4e29d4a3e2c2a97460f429c2928a">
-      <text x="32" y="124" class="detail">ddb055d Setup for Profile enhancment.</text>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/45a86924d268fbeb8571028acdb9d2f1ae8ec740">
+      <text x="32" y="124" class="detail">45a8692 Merge branch &apos;main&apos; of https://github.com...</text>
     </a>
     <text x="604" y="116" class="detail">2026-10-09</text>
     <circle cx="790" cy="111" r="5" fill="#d29922" class="status-dot"/>
