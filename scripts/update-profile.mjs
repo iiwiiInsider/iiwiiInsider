@@ -62,25 +62,27 @@ function decodeXml(value) {
     .replaceAll("&amp;", "&");
 }
 
-async function getLatestBtcDailyCandle() {
+export async function getLatestBtcDailyCandle() {
   const text = await fetchText(
-    "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=2",
-    "Binance BTC/USDT daily candles",
+    "https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440",
+    "Kraken BTC/USD daily candles",
   );
-  const candles = JSON.parse(text);
-  if (!Array.isArray(candles)) {
-    throw new Error("Binance BTC/USDT daily candle response was not an array.");
+  const payload = JSON.parse(text);
+  if (payload.error?.length) {
+    throw new Error(`Kraken BTC/USD daily candles failed: ${payload.error.join(", ")}`);
   }
 
+  const resultKey = Object.keys(payload.result ?? {}).find((key) => key !== "last");
+  const candles = resultKey ? payload.result[resultKey] : [];
   const candle = candles
-    .filter((entry) => Array.isArray(entry) && Number(entry[6]) < Date.now())
+    .filter((entry) => Array.isArray(entry) && (Number(entry[0]) + 86400) * 1000 <= Date.now())
     .at(-1);
   if (!candle) {
-    throw new Error("Binance did not return a completed BTC/USDT daily candle.");
+    throw new Error("Kraken did not return a completed BTC/USD daily candle.");
   }
 
   return {
-    date: new Date(Number(candle[0])).toISOString().slice(0, 10),
+    date: new Date(Number(candle[0]) * 1000).toISOString().slice(0, 10),
     open: Number(candle[1]),
     close: Number(candle[4]),
   };
@@ -310,6 +312,52 @@ async function getRecentPublicEvents() {
   return events;
 }
 
+function recentUtcDays(count = 30) {
+  return Array.from({ length: count }, (_, index) => {
+    const date = new Date();
+    date.setUTCHours(0, 0, 0, 0);
+    date.setUTCDate(date.getUTCDate() - (count - 1 - index));
+    return date.toISOString().slice(0, 10);
+  });
+}
+
+async function getOwnedPrivateRepositories() {
+  if (process.env.INCLUDE_PRIVATE_COMMITS !== "true") return [];
+
+  const repositories = [];
+  for (let page = 1; page <= 10; page++) {
+    const batch = await github(
+      `/user/repos?visibility=private&affiliation=owner&sort=pushed&per_page=100&page=${page}`,
+    );
+    repositories.push(...batch.filter((repo) => repo.owner?.login?.toLowerCase() === username.toLowerCase()));
+    if (batch.length < 100) break;
+  }
+  return repositories;
+}
+
+async function getPrivateCommitCounts(repositories, days) {
+  const counts = new Map(days.map((day) => [day, 0]));
+  if (!process.env.PROFILE_GITHUB_TOKEN || repositories.length === 0) return counts;
+
+  const since = `${days[0]}T00:00:00Z`;
+  await mapWithConcurrency(repositories, 4, async (repo) => {
+    for (let page = 1; page <= 10; page++) {
+      const commits = await github(
+        `/repos/${username}/${encodeURIComponent(repo.name)}/commits?author=${encodeURIComponent(username)}&since=${encodeURIComponent(since)}&per_page=100&page=${page}`,
+      );
+      for (const commit of commits) {
+        const committedAt =
+          commit.commit?.author?.date ?? commit.commit?.committer?.date;
+        if (!committedAt) continue;
+        const day = committedAt.slice(0, 10);
+        if (counts.has(day)) counts.set(day, counts.get(day) + 1);
+      }
+      if (commits.length < 100) break;
+    }
+  });
+  return counts;
+}
+
 function dashboardSvg(repositories) {
   const width = 960;
   const rowHeight = 48;
@@ -392,7 +440,7 @@ function btcDashboardSvg(candle, article) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USDT completed daily candle for ${xml(candle.date)}: open ${xml(formatPrice(candle.open))}, close ${xml(formatPrice(candle.close))}.${article ? ` Latest article: ${xml(article.title)}` : " No recent news article was found."}</desc>
+  <desc id="description">BTC/USD completed daily candle for ${xml(candle.date)}: open ${xml(formatPrice(candle.open))}, close ${xml(formatPrice(candle.close))}.${article ? ` Latest article: ${xml(article.title)}` : " No recent news article was found."}</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -404,11 +452,11 @@ function btcDashboardSvg(candle, article) {
     a { text-decoration: none; }
   </style>
   <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
-  <text x="24" y="34" class="heading">BITCOIN // BTC/USDT DAILY</text>
+  <text x="24" y="34" class="heading">BITCOIN // BTC/USD DAILY</text>
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">${xml(candle.date)} · Binance BTC/USDT daily candle</text>
+  <text x="96" y="116" class="muted">${xml(candle.date)} · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
@@ -425,14 +473,14 @@ function btcDashboardSvg(candle, article) {
 `;
 }
 
-function commitPulseSvg(events) {
-  const days = Array.from({ length: 30 }, (_, index) => {
-    const date = new Date();
-    date.setUTCHours(0, 0, 0, 0);
-    date.setUTCDate(date.getUTCDate() - (29 - index));
-    return date.toISOString().slice(0, 10);
-  });
-  const counts = new Map(days.map((day) => [day, 0]));
+export function commitPulseSvg(events, privateCounts, privateActivityEnabled) {
+  const days = recentUtcDays();
+  const counts = new Map(
+    days.map((day) => [
+      day,
+      privateActivityEnabled ? (privateCounts.get(day) ?? 0) : 0,
+    ]),
+  );
 
   for (const event of events) {
     if (event.type !== "PushEvent") continue;
@@ -443,6 +491,7 @@ function commitPulseSvg(events) {
   }
 
   const values = days.map((day) => counts.get(day));
+  const privateTotal = [...privateCounts.values()].reduce((sum, count) => sum + count, 0);
   const max = Math.max(...values, 1);
   const xStart = 36;
   const xStep = 29;
@@ -463,7 +512,7 @@ function commitPulseSvg(events) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="940" height="210" viewBox="0 0 940 210" role="img" aria-labelledby="title description">
   <title id="title">Animated commit activity pulse</title>
-  <desc id="description">${total} public commits in the last 30 days.</desc>
+  <desc id="description">${total} commits in the last 30 days${privateActivityEnabled ? `, including ${privateTotal} from private repositories` : ", from public repositories only"}.</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .title { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -475,8 +524,8 @@ function commitPulseSvg(events) {
     @keyframes breathe { 50% { opacity: .45; transform: scale(.72); } }
   </style>
   <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
-  <text x="24" y="32" class="title">COMMIT PULSE // ${total} PUBLIC COMMITS IN 30 DAYS</text>
-  <text x="24" y="51" class="muted">Daily public push activity · UTC</text>
+  <text x="24" y="32" class="title">COMMIT PULSE // ${total} COMMITS IN 30 DAYS</text>
+  <text x="24" y="51" class="muted">${privateActivityEnabled ? `${privateTotal} PRIVATE + PUBLIC ACTIVITY · REPO DETAILS HIDDEN · UTC` : "PUBLIC ACTIVITY ONLY · ADD PROFILE_GITHUB_TOKEN TO INCLUDE PRIVATE COUNTS · UTC"}</text>
   ${labels}
   <polyline class="glow" points="${points.join(" ")}"/>
   <polyline class="pulse" points="${points.join(" ")}"/>
@@ -499,19 +548,26 @@ async function main() {
   }
 
   const selected = repositories.slice(0, 25);
-  const [activity, languageData, events, btcCandle, btcNews] = await Promise.all([
+  const [activity, languageData, events, btcCandle, btcNews, privateRepositories] = await Promise.all([
     mapWithConcurrency(selected, 5, getLatestForRepository),
     mapWithConcurrency(repositories, 5, getRepositoryLanguages),
     getRecentPublicEvents(),
     getLatestBtcDailyCandle(),
     getLatestBitcoinNews(),
+    getOwnedPrivateRepositories(),
   ]);
   const languageMix = aggregateLanguages(languageData);
+  const days = recentUtcDays();
+  const privateCounts = await getPrivateCommitCounts(privateRepositories, days);
+  const privateActivityEnabled = process.env.INCLUDE_PRIVATE_COMMITS === "true";
 
   await mkdir("assets", { recursive: true });
   await Promise.all([
     writeFile("assets/repo-dashboard.svg", dashboardSvg(activity)),
-    writeFile("assets/commit-pulse.svg", commitPulseSvg(events)),
+    writeFile(
+      "assets/commit-pulse.svg",
+      commitPulseSvg(events, privateCounts, privateActivityEnabled),
+    ),
     writeFile("assets/btc-dashboard.svg", btcDashboardSvg(btcCandle, btcNews)),
     writeFile(
       "assets/languages.svg",
@@ -520,7 +576,7 @@ async function main() {
   ]);
 
   console.log(
-    `Updated activity graphics for ${activity.length} repositories, all ${repositories.length} public repository language reports (${languageMix.length} languages), ${events.length} recent public events, and the BTC/USDT candle for ${btcCandle.date}${btcNews ? " with a news article" : " without a news article"}.`,
+    `Updated activity graphics for ${activity.length} repositories, all ${repositories.length} public repository language reports (${languageMix.length} languages), ${events.length} recent public events, ${privateRepositories.length} private repositories, and the BTC/USD candle for ${btcCandle.date}${btcNews ? " with a news article" : " without a news article"}.`,
   );
 }
 

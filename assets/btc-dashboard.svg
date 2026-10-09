@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USDT completed daily candle for 2026-10-08: open $83,321.81, close $81,754.45. Latest article: ZX Squared Capital’s Zheng Called the Last Bitcoin Bottom and This Time, He Says $80,000 Is the Final Window - FF News</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-08: open $83,276.10, close $81,683.80. Latest article: ZX Squared Capital’s Zheng Called the Last Bitcoin Bottom and This Time, He Says $80,000 Is the Final Window - FF News</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -12,18 +12,18 @@
     a { text-decoration: none; }
   </style>
   <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
-  <text x="24" y="34" class="heading">BITCOIN // BTC/USDT DAILY</text>
+  <text x="24" y="34" class="heading">BITCOIN // BTC/USD DAILY</text>
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-08 · Binance BTC/USDT daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-08 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$83,321.81</text>
+  <text x="32" y="194" class="price">$83,276.10</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$81,754.45</text>
+  <text x="252" y="194" class="price">$81,683.80</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
   <a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYkJ2NVhXOEVwSlFrQXFjczlwMV9CVWtGWEZBRW5YdGZpTFJsTTY0cUpHeDZpLU9YTlZDOURKTEJBNUs1WjZ5Mk5NeVJxRUJUSkdGWDJEUFl4cnJEaVlUaVhrV25PcXJPcUhWVmJJdS1ZbVVIdEJIekpBcnpDOVItUTJ6M2NIVTh0YjNJV2hxc2F2aDVNYUF0WFN0SGRMSkZQcFc3d3c3WkdDWGNwRDh5UVBQdFZoRmNSR28wYUpMTDdtaGlPVWdPVlZBQVpMLVAyaVdJcHJHWFo0QQ?oc=5"><text x="500" y="142" class="news-title">ZX Squared Capital’s Zheng Called the Last Bitcoin</text><text x="500" y="162" class="news-title">Bottom and This Time, He Says $80,000 Is the Final...</text></a>
