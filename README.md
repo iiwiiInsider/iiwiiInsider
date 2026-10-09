@@ -9,7 +9,7 @@ Last completed BTC/USD daily candle and the latest Bitcoin article from the news
 
 Language shares are calculated from GitHub's code-byte totals across all my public repositories. Every detected language is included and the percentages add up to 100%.
 
-![All programming languages used across my public repositories](./assets/languages.svg)
+![All programming languages used across my public repositories](./assets/languages.svg?refresh=20261009)
 
 ## Repository activity
 
