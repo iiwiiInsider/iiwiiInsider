@@ -22,8 +22,13 @@
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="107" class="name">iiwiiInsider</text>
     </a>
+<<<<<<< HEAD
     <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/7bfd42c1f5980d9684c7a65777fdae58f9d46393">
       <text x="32" y="124" class="detail">7bfd42c chore: refresh profile activity</text>
+=======
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/45a86924d268fbeb8571028acdb9d2f1ae8ec740">
+      <text x="32" y="124" class="detail">45a8692 Merge branch &apos;main&apos; of https://github.com...</text>
+>>>>>>> 7bfd42c1f5980d9684c7a65777fdae58f9d46393
     </a>
     <text x="604" y="116" class="detail">2026-10-09</text>
     <circle cx="790" cy="111" r="5" fill="#3fb950" class="status-dot"/>
