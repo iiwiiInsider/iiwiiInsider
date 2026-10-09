@@ -1,4 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 
 const username = "iiwiiInsider";
 const apiBase = "https://api.github.com";
@@ -157,6 +159,129 @@ async function getLatestForRepository(repo) {
             : "#8b949e"
       : "#8b949e",
   };
+}
+
+async function getRepositoryLanguages(repo) {
+  return github(`/repos/${username}/${encodeURIComponent(repo.name)}/languages`);
+}
+
+export function aggregateLanguages(repositoryLanguages) {
+  const totals = new Map();
+  for (const languages of repositoryLanguages) {
+    for (const [language, bytes] of Object.entries(languages)) {
+      totals.set(language, (totals.get(language) ?? 0) + bytes);
+    }
+  }
+
+  const languages = [...totals.entries()]
+    .filter(([, bytes]) => bytes > 0)
+    .map(([name, bytes]) => ({ name, bytes }))
+    .sort((a, b) => b.bytes - a.bytes || a.name.localeCompare(b.name));
+  const totalBytes = languages.reduce((sum, language) => sum + language.bytes, 0);
+  if (!totalBytes) return [];
+
+  const tenths = languages.map((language) => {
+    const exactTenths = (language.bytes / totalBytes) * 1000;
+    return {
+      ...language,
+      tenths: Math.floor(exactTenths),
+      remainder: exactTenths - Math.floor(exactTenths),
+    };
+  });
+  const remainingTenths = 1000 - tenths.reduce((sum, language) => sum + language.tenths, 0);
+  const remainderOrder = [...tenths].sort((a, b) => b.remainder - a.remainder);
+  for (let index = 0; index < remainingTenths; index++) {
+    remainderOrder[index].tenths++;
+  }
+
+  return tenths.map(({ name, bytes, tenths: share }) => ({
+    name,
+    bytes,
+    percentage: share / 10,
+  }));
+}
+
+export function languageDashboardSvg(languages, repositoryCount) {
+  const width = 960;
+  const rowHeight = 38;
+  const columns = 2;
+  const rowCount = Math.ceil(languages.length / columns);
+  const height = 144 + Math.max(rowCount, 1) * rowHeight + 24;
+  const colors = {
+    "C#": "#178600",
+    CSS: "#563d7c",
+    Dockerfile: "#384d54",
+    Go: "#00add8",
+    HTML: "#e34c26",
+    Java: "#b07219",
+    JavaScript: "#f1e05a",
+    Jupyter: "#da5b0b",
+    Kotlin: "#a97bff",
+    PHP: "#4f5d95",
+    Python: "#3572a5",
+    Ruby: "#701516",
+    Rust: "#dea584",
+    Shell: "#89e051",
+    Swift: "#f05138",
+    TypeScript: "#3178c6",
+  };
+  const palette = ["#58a6ff", "#bc8cff", "#f778ba", "#ffa657", "#3fb950", "#79c0ff"];
+  const totalBytes = languages.reduce((sum, language) => sum + language.bytes, 0);
+  let x = 24;
+  const barWidth = 912;
+  const segments = languages
+    .map((language, index) => {
+      const segmentWidth =
+        index === languages.length - 1
+          ? 24 + barWidth - x
+          : (language.bytes / totalBytes) * barWidth;
+      const segment = `<rect x="${x.toFixed(2)}" y="94" width="${segmentWidth.toFixed(2)}" height="16" fill="${colors[language.name] ?? palette[index % palette.length]}"/>`;
+      x += segmentWidth;
+      return segment;
+    })
+    .join("");
+  const rows = languages.length
+    ? languages
+        .map((language, index) => {
+          const column = Math.floor(index / rowCount);
+          const row = index % rowCount;
+          const left = 32 + column * 464;
+          const y = 142 + row * rowHeight;
+          const color = colors[language.name] ?? palette[index % palette.length];
+          const label = `${language.percentage.toFixed(1)}%`;
+          const byteLabel =
+            language.bytes >= 1_000_000
+              ? `${(language.bytes / 1_000_000).toFixed(1)} MB`
+              : language.bytes >= 1000
+                ? `${(language.bytes / 1000).toFixed(1)} KB`
+                : `${language.bytes} B`;
+          return `
+    <circle cx="${left}" cy="${y - 4}" r="5" fill="${color}"/>
+    <text x="${left + 14}" y="${y}" class="language">${xml(language.name)}</text>
+    <text x="${left + 340}" y="${y}" class="percentage">${label}</text>
+    <text x="${left + 390}" y="${y}" class="bytes">${byteLabel}</text>`;
+        })
+        .join("")
+    : `<text x="32" y="150" class="muted">Waiting for the profile workflow to calculate language percentages.</text>`;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title description">
+  <title id="title">Programming language usage across public repositories</title>
+  <desc id="description">${languages.length ? `All ${languages.length} detected languages across ${repositoryCount} public repositories, totaling 100 percent by GitHub-reported language bytes.` : "Language data has not been generated yet."}</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .heading { fill: #f0f6fc; font-size: 19px; font-weight: 700; }
+    .muted, .bytes { fill: #8b949e; font-size: 11px; }
+    .language { fill: #c9d1d9; font-size: 13px; }
+    .percentage { fill: #f0f6fc; font-size: 13px; font-weight: 700; }
+  </style>
+  <rect width="100%" height="100%" rx="12" fill="#0d1117"/>
+  <text x="24" y="36" class="heading">LANGUAGE MIX // ${languages.length ? "100%" : "AWAITING DATA"}</text>
+  <text x="24" y="61" class="muted">${languages.length ? `All ${languages.length} detected languages · ${repositoryCount} public repositories · share of GitHub-reported code bytes` : "Language shares will appear after the profile workflow fetches GitHub's byte totals."}</text>
+  <clipPath id="bar-clip"><rect x="24" y="94" width="912" height="16" rx="8"/></clipPath>
+  <g clip-path="url(#bar-clip)">${segments}</g>
+  ${rows}
+</svg>
+`;
 }
 
 async function mapWithConcurrency(items, limit, mapper) {
@@ -365,7 +490,7 @@ function commitPulseSvg(events) {
 
 async function main() {
   const repositories = [];
-  for (let page = 1; page <= 5; page++) {
+  for (let page = 1; page <= 10; page++) {
     const batch = await github(
       `/users/${username}/repos?type=owner&sort=updated&per_page=100&page=${page}`,
     );
@@ -374,26 +499,34 @@ async function main() {
   }
 
   const selected = repositories.slice(0, 25);
-  const activity = await mapWithConcurrency(selected, 5, getLatestForRepository);
-  const [events, btcCandle, btcNews] = await Promise.all([
+  const [activity, languageData, events, btcCandle, btcNews] = await Promise.all([
+    mapWithConcurrency(selected, 5, getLatestForRepository),
+    mapWithConcurrency(repositories, 5, getRepositoryLanguages),
     getRecentPublicEvents(),
     getLatestBtcDailyCandle(),
     getLatestBitcoinNews(),
   ]);
+  const languageMix = aggregateLanguages(languageData);
 
   await mkdir("assets", { recursive: true });
   await Promise.all([
     writeFile("assets/repo-dashboard.svg", dashboardSvg(activity)),
     writeFile("assets/commit-pulse.svg", commitPulseSvg(events)),
     writeFile("assets/btc-dashboard.svg", btcDashboardSvg(btcCandle, btcNews)),
+    writeFile(
+      "assets/languages.svg",
+      languageDashboardSvg(languageMix, repositories.length),
+    ),
   ]);
 
   console.log(
-    `Updated activity graphics for ${activity.length} repositories, ${events.length} recent public events, and the BTC/USDT candle for ${btcCandle.date}${btcNews ? " with a news article" : " without a news article"}.`,
+    `Updated activity graphics for ${activity.length} repositories, all ${repositories.length} public repository language reports (${languageMix.length} languages), ${events.length} recent public events, and the BTC/USDT candle for ${btcCandle.date}${btcNews ? " with a news article" : " without a news article"}.`,
   );
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

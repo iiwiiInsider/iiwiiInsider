@@ -5,6 +5,12 @@ Last completed BTC/USDT daily candle and the latest Bitcoin article from the new
 
 ![Bitcoin daily open, close, and latest news](./assets/btc-dashboard.svg)
 
+## All repository languages
+
+Language shares are calculated from GitHub's code-byte totals across all my public repositories. Every detected language is included and the percentages add up to 100%.
+
+![All programming languages used across my public repositories](./assets/languages.svg)
+
 ## Repository activity
 
 Latest commits and GitHub Actions runs across my 25 most recently updated public repositories:

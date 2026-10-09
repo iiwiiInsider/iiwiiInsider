@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit updated graphics
         run: |
-          git add assets/repo-dashboard.svg assets/commit-pulse.svg assets/btc-dashboard.svg
+          git add assets/repo-dashboard.svg assets/commit-pulse.svg assets/btc-dashboard.svg assets/languages.svg
           if git diff --cached --quiet; then
             echo "Profile graphics are already up to date."
           else
