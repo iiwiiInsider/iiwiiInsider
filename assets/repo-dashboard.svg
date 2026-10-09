@@ -22,8 +22,8 @@
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="107" class="name">iiwiiInsider</text>
     </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/4ded17f9db7871a680437a8ab088c4e3056d7070">
-      <text x="32" y="124" class="detail">4ded17f Merge branch &apos;main&apos; of https://github.com...</text>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/54b4270fd22cf4e91031165cfb2c8743727b5887">
+      <text x="32" y="124" class="detail">54b4270 removed assest.</text>
     </a>
     <text x="604" y="116" class="detail">2026-10-09</text>
     <circle cx="790" cy="111" r="5" fill="#d29922" class="status-dot"/>
