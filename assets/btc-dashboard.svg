@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-08: open $83,276.10, close $81,683.80. Latest article: Bitcoin Recovers as Trump Hails Constructive Talks With Iran - Barron&apos;s</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-09: open $81,683.80, close $82,559.40. Latest article: Bitcoin trades above $82,000 as rising oil prices, Fed outlook weigh - Yahoo Finance Australia</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-08 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-09 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$83,276.10</text>
+  <text x="32" y="194" class="price">$81,683.80</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$81,683.80</text>
+  <text x="252" y="194" class="price">$82,559.40</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMiiAJBVV95cUxQRWdjNU1JWkMtclFNWTV1ZFhUcl9ydDRIM0J4TnpJa2toU1pCVVZWcXF1RjRvdlVaT2NqamxNc3R1Uk85YldrNm8xUHQzSVFlc1dpZDFGWWhxMzdlM1RWQkJRUnBfYW5VRUtncG1iVnRwZFVralBoNDRJY3pBYk5hZURGbWlpUGlMdllZek9zZ3RxZG1pZzlBWGl3cUVTN09Pd0tJMUpNN0VsLWg5dXdXUzhEbS0yMV9xOS1QbVVYQk12MEtOa21WazNKbThZRjdPblZPNEtJa2JVYnBjeEhtU2RtWTNRTW1BYzFpTlptU05ES0V4dTNSemNGQmQ2ZjBNdzl4RzZFV3k?oc=5"><text x="500" y="142" class="news-title">Bitcoin Recovers as Trump Hails Constructive Talks</text><text x="500" y="162" class="news-title">With Iran - Barron&apos;s</text></a>
-  <text x="500" y="190" class="muted">Barron&apos;s · 2026-10-09 09:09 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOMXd3UTBvQUt1Q3FNVHh0Q2JpMnVYYWo1U1ZOaTZHYTdwZ05OV0hEbTE0bi1IQzNENWt4WUtXbUh4YTc5azdoOC1NaEhjVlhPcG5oRmdJUFRNWVlhZ3VrMXNZVXJGVF9lenlCWHRxSVBtbV95Yl9MOFNNd0dlZ0lBc1JR?oc=5"><text x="500" y="142" class="news-title">Bitcoin trades above $82,000 as rising oil prices,</text><text x="500" y="162" class="news-title">Fed outlook weigh - Yahoo Finance Australia</text></a>
+  <text x="500" y="190" class="muted">Yahoo Finance Australia · 2026-10-10 04:46 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
