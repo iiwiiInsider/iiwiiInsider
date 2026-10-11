@@ -18,29 +18,29 @@
   <text x="604" y="70" class="column">DATE</text>
   <text x="790" y="70" class="column">LATEST ACTION</text>
   
-    <a href="https://github.com/iiwiiInsider/My_Photoshop">
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider">
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
-      <text x="32" y="107" class="name">My_Photoshop</text>
+      <text x="32" y="107" class="name">iiwiiInsider</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/3d38fb32a7a924260aca427b99280a9c06df4cc5">
+      <text x="32" y="124" class="detail">3d38fb3 chore: refresh profile activity</text>
+    </a>
+    <text x="604" y="116" class="detail">2026-10-10</text>
+    <circle cx="790" cy="111" r="5" fill="#d29922" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
+      <text x="804" y="116" class="status" fill="#d29922">IN PROGRESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/My_Photoshop">
+      <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="155" class="name">My_Photoshop</text>
     </a>
     <a href="https://github.com/iiwiiInsider/My_Photoshop/commit/6edee2ef1a6b5d262347fc293c988f9247c34086">
-      <text x="32" y="124" class="detail">6edee2e Initial commit</text>
-    </a>
-    <text x="604" y="116" class="detail">2026-10-09</text>
-    <circle cx="790" cy="111" r="5" fill="#8b949e" class="status-dot"/>
-    <a href="https://github.com/iiwiiInsider/My_Photoshop/actions">
-      <text x="804" y="116" class="status" fill="#8b949e">NO RUNS</text>
-    </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider">
-      <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
-      <text x="32" y="155" class="name">iiwiiInsider</text>
-    </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/ec57bf809df0245e9fd8fac40d6d01f259bb310d">
-      <text x="32" y="172" class="detail">ec57bf8 chore: refresh profile activity</text>
+      <text x="32" y="172" class="detail">6edee2e Initial commit</text>
     </a>
     <text x="604" y="164" class="detail">2026-10-09</text>
-    <circle cx="790" cy="159" r="5" fill="#d29922" class="status-dot"/>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
-      <text x="804" y="164" class="status" fill="#d29922">IN PROGRESS</text>
+    <circle cx="790" cy="159" r="5" fill="#8b949e" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/My_Photoshop/actions">
+      <text x="804" y="164" class="status" fill="#8b949e">NO RUNS</text>
     </a>
     <a href="https://github.com/iiwiiInsider/AdBlock_GrammarCheck_Chrome_Extention">
       <rect x="16" y="186" width="928" height="42" rx="8" fill="#161b22"/>
