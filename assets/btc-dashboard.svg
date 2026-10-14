@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-12: open $83,675.60, close $81,737.10. Latest article: $3.95M Bitcoin short position liquidated on Bin... - Pluang</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-13: open $81,737.20, close $83,101.20. Latest article: Coinbase Sets Bitcoin Quantum Priorities: P2MR, Staged Protection - Altcoin Buzz</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-12 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-13 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$83,675.60</text>
+  <text x="32" y="194" class="price">$81,737.20</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$81,737.10</text>
+  <text x="252" y="194" class="price">$83,101.20</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOSmpHYmtURjZJNEo3Y3BqdGdhTWhNZVlyaTV3UzdJeExKcjk1cnpWUjhGYjlrZGlWRU9tYWYtR1FuYWJYZWpjSEd3N0VzZF9DWnhJVzcyZHRkS0doYmc2bFg3czNDWHBpeXQ0MjZhUFJ0N0lmTkRDeEFWNEtVNF9TOGYxVnZHMHVXdkNwNzlDNzlmdFk?oc=5"><text x="500" y="142" class="news-title">$3.95M Bitcoin short position liquidated on Bin... -</text><text x="500" y="162" class="news-title">Pluang</text></a>
-  <text x="500" y="190" class="muted">Pluang · 2026-10-13 05:34 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOV1ItUmFVOGFwYmI4UlZZclgwaWZOMHhUc2t3eldRUFRsNkxzbjd4RE90bnNyalNfbC11aWVXdGx5QngzY1pONGgtNnNHUVdKaDd0MHFtcUJSMVc2YUswUzhxaXBCV1h4dDBZS3ZSOE5RVXU2bF9TMU1lVGZpaDBqb1pfX3hfakpfRGhRc0tobm1xZw?oc=5"><text x="500" y="142" class="news-title">Coinbase Sets Bitcoin Quantum Priorities: P2MR,</text><text x="500" y="162" class="news-title">Staged Protection - Altcoin Buzz</text></a>
+  <text x="500" y="190" class="muted">Altcoin Buzz · 2026-10-14 05:02 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
