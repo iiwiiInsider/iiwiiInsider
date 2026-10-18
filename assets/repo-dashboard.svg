@@ -22,10 +22,10 @@
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="107" class="name">iiwiiInsider</text>
     </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/af003e53719749f89fc71c83cfb601051f009310">
-      <text x="32" y="124" class="detail">af003e5 chore: refresh profile activity</text>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/abfd65505b2329b0f50aa745eddcbbf2040f4f58">
+      <text x="32" y="124" class="detail">abfd655 chore: refresh profile activity</text>
     </a>
-    <text x="604" y="116" class="detail">2026-10-16</text>
+    <text x="604" y="116" class="detail">2026-10-17</text>
     <circle cx="790" cy="111" r="5" fill="#d29922" class="status-dot"/>
     <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
       <text x="804" y="116" class="status" fill="#d29922">IN PROGRESS</text>

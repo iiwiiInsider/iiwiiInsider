@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-16: open $82,135.40, close $81,500.80. Latest article: US Spot Bitcoin ETFs See $82.41 Million in Net Outflows, With $71.8 Million Exiting BlackRock&apos;s IBIT - bloomingbit</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-17: open $81,500.90, close $81,382.00. Latest article: Bitcoin rises slightly to $81,801 while overall crypto market drops 2.75%. - Pluang</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-16 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-17 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$82,135.40</text>
+  <text x="32" y="194" class="price">$81,500.90</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$81,500.80</text>
+  <text x="252" y="194" class="price">$81,382.00</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ReHFNbDlUV0VCOFl4elp2bEJXWU4yUGhYOHdrbzV0YVBVeUdERWFzV2VvSFQzVEU2M0QyWEpseUN3TE9GWlk5b1R6TGM2WXl3NUdOSg?oc=5"><text x="500" y="142" class="news-title">US Spot Bitcoin ETFs See $82.41 Million in Net</text><text x="500" y="162" class="news-title">Outflows, With $71.8 Million Exiting BlackRock&apos;s...</text></a>
-  <text x="500" y="190" class="muted">bloomingbit · 2026-10-17 04:32 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNREZCM3I2Q0tfYTN3OEtoRThiOENERVE2YXlSMHlzcV8zN0dmRGdoaG1VQ0xjR1hiMmp1MkJiYmtQQW9KSVdPYjBNUk1fSHlKWTM3aUZ2TThfdy1MblZTZ0ZvWFpxVTU4V1pvVVFIa3BtT25XS0Fha1dmWUlHVzNsODZHWDQ5d211MEpzTnpLLTdSVDFGM2ZMaE9mQ0ZweG5LdW84amFXNm9hdjdZTVVz?oc=5"><text x="500" y="142" class="news-title">Bitcoin rises slightly to $81,801 while overall</text><text x="500" y="162" class="news-title">crypto market drops 2.75%. - Pluang</text></a>
+  <text x="500" y="190" class="muted">Pluang · 2026-10-18 05:24 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
