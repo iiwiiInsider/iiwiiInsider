@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-19: open $82,001.70, close $81,843.70. Latest article: Bitcoin Price Prediction: Will BTC Cross $100K This Year? Buyers Enter AlphaPepe Presale For 100x - StreetInsider</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-20: open $81,843.00, close $82,936.10. Latest article: What could send Bitcoin’s price SKY HIGH? Michael Saylor reveals the biggest bull catalysts ahead: - Moomoo</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-19 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-20 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$82,001.70</text>
+  <text x="32" y="194" class="price">$81,843.00</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$81,843.70</text>
+  <text x="252" y="194" class="price">$82,936.10</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVUVCREl1X0pQbHdmYXNRWWJyQ2R0Rmx5c0o0OGRQR0hpbWR5UEc3ZmE5a19MaDNMbVp4c3BBLXVueUFmT0ZMbmpBd2UwVjBJTjNYM1ZZQ0hKRVdLc0hiMjNxLXpfbEowajJvbWtmTVBydHZpLTllOFdmLS05ZlFtOC14ZFdCaW9GNGVQMk1wNXVXMTdvNFFRRjRWWW5TXzVnb1lVMzlaMFRrQmp2Vk0tcUVfd3hQa1c2aEtqN3pqR25qdmlKZ2RqREtLZzdlbjBoRGZWSnpYYnRHb0tfQWFMa0JPakZCWGNnUm5mcE16el9PQQ?oc=5"><text x="500" y="142" class="news-title">Bitcoin Price Prediction: Will BTC Cross $100K This</text><text x="500" y="162" class="news-title">Year? Buyers Enter AlphaPepe Presale For 100x -...</text></a>
-  <text x="500" y="190" class="muted">StreetInsider · 2026-10-20 04:57 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQWlRqaDJPNWhyMWszQmE0QUhSNEtVZ2QwbzFPd285MUtNOUppSE5ONk02MzdjOVRYUUdkM0s1aWd1LTI4OGJYQjJxZHVHV19DNkpmVUJ0MnE0SldSY2JaNWNlZm1nLVQyNFlyaDB4YlpLcmZDS2pFcjcwbm1ZOHliNklPZEhIdUczREE3dGJqMEhyZTBOTEE0ZWtEVDJDcXg2LXo1eFIybFNBWUkyS3c?oc=5"><text x="500" y="142" class="news-title">What could send Bitcoin’s price SKY HIGH? Michael</text><text x="500" y="162" class="news-title">Saylor reveals the biggest bull catalysts ahead: -...</text></a>
+  <text x="500" y="190" class="muted">Moomoo · 2026-10-21 05:16 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
