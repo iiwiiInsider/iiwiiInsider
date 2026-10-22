@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-20: open $81,843.00, close $82,936.10. Latest article: What could send Bitcoin’s price SKY HIGH? Michael Saylor reveals the biggest bull catalysts ahead: - Moomoo</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-21: open $82,936.10, close $84,022.50. Latest article: On the Chain: Bitcoin holds near US$83,000 as volatility sinks ahead of Fed decision - Proactive financial news</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-20 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-21 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$81,843.00</text>
+  <text x="32" y="194" class="price">$82,936.10</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$82,936.10</text>
+  <text x="252" y="194" class="price">$84,022.50</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQWlRqaDJPNWhyMWszQmE0QUhSNEtVZ2QwbzFPd285MUtNOUppSE5ONk02MzdjOVRYUUdkM0s1aWd1LTI4OGJYQjJxZHVHV19DNkpmVUJ0MnE0SldSY2JaNWNlZm1nLVQyNFlyaDB4YlpLcmZDS2pFcjcwbm1ZOHliNklPZEhIdUczREE3dGJqMEhyZTBOTEE0ZWtEVDJDcXg2LXo1eFIybFNBWUkyS3c?oc=5"><text x="500" y="142" class="news-title">What could send Bitcoin’s price SKY HIGH? Michael</text><text x="500" y="162" class="news-title">Saylor reveals the biggest bull catalysts ahead: -...</text></a>
-  <text x="500" y="190" class="muted">Moomoo · 2026-10-21 05:16 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcHlXb0d6WUR2M2haejNaRF9MQjFpOTRQOGt5a1FQUW9ULXo3dTNFZjl1OHFLbmxFUVc2Z0VWSTYyM1dvYlh5ajVLQS0zUVdwNHh1QzRqU1VONDhDM2pjV0VzNnZEOTlNTUtoZkU0UzBUcTNBRDdzQzFqZ3M3ZG9mSDJSU2RpSVlGbHo1NmtKeFVNWGh4dnlZWVVxNjBCSTdEeHZaZWtaendELXJSaDlIdHoweDJab2w5WmRvSGxqbUt6cFdKd01pYVJaeS1iQ0Z3WUFlNWRJeU9BaVhxZlJlRGx0SlpUQzFlSGc?oc=5"><text x="500" y="142" class="news-title">On the Chain: Bitcoin holds near US$83,000 as</text><text x="500" y="162" class="news-title">volatility sinks ahead of Fed decision - Proactive...</text></a>
+  <text x="500" y="190" class="muted">Proactive financial news · 2026-10-22 05:16 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
