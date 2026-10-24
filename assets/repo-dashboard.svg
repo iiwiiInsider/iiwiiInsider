@@ -18,29 +18,29 @@
   <text x="604" y="70" class="column">DATE</text>
   <text x="790" y="70" class="column">LATEST ACTION</text>
   
-    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings">
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider">
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
-      <text x="32" y="107" class="name">EngineringAndGraphicalDrawings</text>
+      <text x="32" y="107" class="name">iiwiiInsider</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/bb6728e0f152ccb7f03a869aab364922b48b3443">
+      <text x="32" y="124" class="detail">bb6728e chore: refresh profile activity</text>
+    </a>
+    <text x="604" y="116" class="detail">2026-10-23</text>
+    <circle cx="790" cy="111" r="5" fill="#d29922" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
+      <text x="804" y="116" class="status" fill="#d29922">IN PROGRESS</text>
+    </a>
+    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings">
+      <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
+      <text x="32" y="155" class="name">EngineringAndGraphicalDrawings</text>
     </a>
     <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings/commit/5aa5663a1abd1c8eecaf12535a836c6402b09291">
-      <text x="32" y="124" class="detail">5aa5663 added drwings.</text>
-    </a>
-    <text x="604" y="116" class="detail">2026-10-22</text>
-    <circle cx="790" cy="111" r="5" fill="#3fb950" class="status-dot"/>
-    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings/actions">
-      <text x="804" y="116" class="status" fill="#3fb950">SUCCESS</text>
-    </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider">
-      <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
-      <text x="32" y="155" class="name">iiwiiInsider</text>
-    </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/4e48414add746bd9f2f0a89c1c141c3797576bcf">
-      <text x="32" y="172" class="detail">4e48414 chore: refresh profile activity</text>
+      <text x="32" y="172" class="detail">5aa5663 added drwings.</text>
     </a>
     <text x="604" y="164" class="detail">2026-10-22</text>
-    <circle cx="790" cy="159" r="5" fill="#d29922" class="status-dot"/>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
-      <text x="804" y="164" class="status" fill="#d29922">IN PROGRESS</text>
+    <circle cx="790" cy="159" r="5" fill="#3fb950" class="status-dot"/>
+    <a href="https://github.com/iiwiiInsider/EngineringAndGraphicalDrawings/actions">
+      <text x="804" y="164" class="status" fill="#3fb950">SUCCESS</text>
     </a>
     <a href="https://github.com/iiwiiInsider/Marketplace_Trading_Platform">
       <rect x="16" y="186" width="928" height="42" rx="8" fill="#161b22"/>
