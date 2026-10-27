@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-25: open $80,772.00, close $80,048.50. Latest article: Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments - CoinDesk</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-26: open $80,048.70, close $80,001.90. Latest article: Bitcoin short-term holder profit drops to 70%, which Glassnode says may favor buyers - TradingView</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-25 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-26 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$80,772.00</text>
+  <text x="32" y="194" class="price">$80,048.70</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$80,048.50</text>
+  <text x="252" y="194" class="price">$80,001.90</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNRTBGRFRId3JiZ2Jjc3M3YkZLbFZXdTJkMzlrdThuUFVtY0FhTG1sY3JRZlQ2bDJPbWR5LXdJaUR1NERUSzJwS3E4a3VUbHo4R044TnVFdDJ5VDItSlN0OWVyd0pPZV9GYkpFSExwSjB6UTBFajJDMnVJaENDSEhURTdwMTVVaU5hQzFrT19YMGNHUnJCOEdzdFQ5ZGd5T3hHZGZqUHR3R1NJM3J2YWtwZzc3bmJ3YjlwczRvZVRNUGVBZk5Famc?oc=5"><text x="500" y="142" class="news-title">Bitcoin wallet bug let rogue servers steal funds</text><text x="500" y="162" class="news-title">when users tried to speed up payments - CoinDesk</text></a>
-  <text x="500" y="190" class="muted">CoinDesk · 2026-10-26 05:15 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTVp3ZG4wMUdzQ3FXNTBEeTZlWmNSck9xbWtjYVRtNjE3SEhJX1pGclBWZGxOd2JjSy1QOUdCLTUwTUhQWl9sbGZLSjdJZklvMXJ4Q3RXUWUyMU5vbGpxTTg3SXdQNm9ZZ0tGamgtQUoxXzZKTGNpRXBMRWVWbUpGT1RmNWNNZTN5VEJxUV82R21Ldy1ud285QlB5NjhuQ0htLVd6Ym1jSm5ORHZNa0NXQXVFN0RsbW9Ya0ZUM2V6U2Q3OFVtYnpQRUozMnlZX1dpSHhndDl1WXlocjAzb1dtNA?oc=5"><text x="500" y="142" class="news-title">Bitcoin short-term holder profit drops to 70%, which</text><text x="500" y="162" class="news-title">Glassnode says may favor buyers - TradingView</text></a>
+  <text x="500" y="190" class="muted">TradingView · 2026-10-27 04:03 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
