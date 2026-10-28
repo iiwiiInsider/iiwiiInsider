@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-10-26: open $80,048.70, close $80,001.90. Latest article: Bitcoin short-term holder profit drops to 70%, which Glassnode says may favor buyers - TradingView</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-10-27: open $80,001.80, close $80,800.90. Latest article: BTC, ETH price news: Bitcoin nears $81,000 ahead of Fed decision as ZEC jumps 8% - CoinDesk</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-10-26 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-10-27 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$80,048.70</text>
+  <text x="32" y="194" class="price">$80,001.80</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$80,001.90</text>
+  <text x="252" y="194" class="price">$80,800.90</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTVp3ZG4wMUdzQ3FXNTBEeTZlWmNSck9xbWtjYVRtNjE3SEhJX1pGclBWZGxOd2JjSy1QOUdCLTUwTUhQWl9sbGZLSjdJZklvMXJ4Q3RXUWUyMU5vbGpxTTg3SXdQNm9ZZ0tGamgtQUoxXzZKTGNpRXBMRWVWbUpGT1RmNWNNZTN5VEJxUV82R21Ldy1ud285QlB5NjhuQ0htLVd6Ym1jSm5ORHZNa0NXQXVFN0RsbW9Ya0ZUM2V6U2Q3OFVtYnpQRUozMnlZX1dpSHhndDl1WXlocjAzb1dtNA?oc=5"><text x="500" y="142" class="news-title">Bitcoin short-term holder profit drops to 70%, which</text><text x="500" y="162" class="news-title">Glassnode says may favor buyers - TradingView</text></a>
-  <text x="500" y="190" class="muted">TradingView · 2026-10-27 04:03 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTkNaeE44eFBVY2pMUnFSTkY3ekxfaFZoQWxqQ19Hb193eVYzalI1c2IyUjQzSHY4YVQ0eEZMQVZXd3FGVGRvOFRXSEVSTEdMdXFpQ0ZrWHBvRF9wd0haVUVJcjlfMjk1ejhoaTNGTnhkdVB0bndzWTRnSXppSGpTa194Q1VOcGJqUnVFUVB6QTkwMEQydGFHMUctVUpqWG5tblpBT25yNA?oc=5"><text x="500" y="142" class="news-title">BTC, ETH price news: Bitcoin nears $81,000 ahead of</text><text x="500" y="162" class="news-title">Fed decision as ZEC jumps 8% - CoinDesk</text></a>
+  <text x="500" y="190" class="muted">CoinDesk · 2026-10-28 04:15 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
