@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-11-05: open $80,440.80, close $75,979.90. Latest article: Bitcoin Recovers From $6.3B Binance Hack: Is the Market Maturing? - CryptoRank</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-11-06: open $75,979.90, close $75,741.60. Latest article: Bitcoin Price Prediction: BTC at Recent Buyers&apos; Cost Basis - CryptoTicker.io</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-11-05 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-11-06 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$80,440.80</text>
+  <text x="32" y="194" class="price">$75,979.90</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$75,979.90</text>
+  <text x="252" y="194" class="price">$75,741.60</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOUUpXeGdVNjR5YWNBSS1BcXZVWFFRRUtZTmF1RzhoRnFCSURnckw2MkZVYzlEWXU4OHBuM2tFSHFWV0hlMDRmclZPSWVZb2pmTXZ4WDZtZWdiZEQtU1c4QzN0OVZtWXRpVVA4OEFGMkZlb0NWaFZqcE0tYlFScmgtTUVKWTdqSjBwQUwtTl93aXk4QXNaNVV1bVNGa1JuMThyNUE?oc=5"><text x="500" y="142" class="news-title">Bitcoin Recovers From $6.3B Binance Hack: Is the</text><text x="500" y="162" class="news-title">Market Maturing? - CryptoRank</text></a>
-  <text x="500" y="190" class="muted">CryptoRank · 2026-11-06 12:24 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPdmRObXhqcFUyRnlyTUw4UUJrQkgwWlNjTTJ6NUs5T3BGRjFFek5ia3BJRlNCUjhLSm1fdi1YVDRnOFZCVm13czk5Q3NjWXlaMC1OeFFzUGZXdkxMeVRoTUtNOTlaMU5pZDltRGJoLXJNOW5HWFpzeG1OZmpPaFF3NWV5ZlJEdmtVLXdZa2szY3BCc1lBNHQwcGxoS2xxZw?oc=5"><text x="500" y="142" class="news-title">Bitcoin Price Prediction: BTC at Recent Buyers&apos; Cost</text><text x="500" y="162" class="news-title">Basis - CryptoTicker.io</text></a>
+  <text x="500" y="190" class="muted">CryptoTicker.io · 2026-11-07 11:12 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
