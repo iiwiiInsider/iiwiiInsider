@@ -22,8 +22,8 @@
       <rect x="16" y="90" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="107" class="name">Online_Web_Application_CV</text>
     </a>
-    <a href="https://github.com/iiwiiInsider/Online_Web_Application_CV/commit/1e301f482d2b8dc3313b4f79756ee0552e4a3918">
-      <text x="32" y="124" class="detail">1e301f4 Added investor sentiment.</text>
+    <a href="https://github.com/iiwiiInsider/Online_Web_Application_CV/commit/548dab8096189d15c752bf5eeee53344d7a52e04">
+      <text x="32" y="124" class="detail">548dab8 Tect out of A-ref into paragragh tag - HTML</text>
     </a>
     <text x="604" y="116" class="detail">2026-11-12</text>
     <circle cx="790" cy="111" r="5" fill="#3fb950" class="status-dot"/>
@@ -34,10 +34,10 @@
       <rect x="16" y="138" width="928" height="42" rx="8" fill="#161b22"/>
       <text x="32" y="155" class="name">iiwiiInsider</text>
     </a>
-    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/9853af1ce5a622b1fc94adfce923707154aff0c1">
-      <text x="32" y="172" class="detail">9853af1 chore: refresh profile activity</text>
+    <a href="https://github.com/iiwiiInsider/iiwiiInsider/commit/b16167b3d8cdb8b398d591476aa66dd3d9d51e9c">
+      <text x="32" y="172" class="detail">b16167b chore: refresh profile activity</text>
     </a>
-    <text x="604" y="164" class="detail">2026-11-11</text>
+    <text x="604" y="164" class="detail">2026-11-12</text>
     <circle cx="790" cy="159" r="5" fill="#d29922" class="status-dot"/>
     <a href="https://github.com/iiwiiInsider/iiwiiInsider/actions">
       <text x="804" y="164" class="status" fill="#d29922">IN PROGRESS</text>
