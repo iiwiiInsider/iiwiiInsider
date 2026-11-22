@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-11-20: open $61,913.50, close $58,806.30. Latest article: Just 2.5% of recent Bitcoin buyers’ exchange deposits were in profit - Cryptonews.net</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-11-21: open $58,806.40, close $60,088.60. Latest article: Quant Funds Are ‘Shorting’ Bitcoin Below $60K, Jordi Visser Says: Here’s When He’ll Buy More - Yahoo Finance</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-11-20 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-11-21 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$61,913.50</text>
+  <text x="32" y="194" class="price">$58,806.40</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$58,806.30</text>
+  <text x="252" y="194" class="price">$60,088.60</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Ua0NqT2pHcnk0Y0NBeUZBaERoRVhDSFNKT2pTcUJJWktWUnkxWTVSSG9UQktzNmppWUhnY2R5WEdwa2I5bXVnMGc1U0RJS1dmRU5WMGxWSDc?oc=5"><text x="500" y="142" class="news-title">Just 2.5% of recent Bitcoin buyers’ exchange</text><text x="500" y="162" class="news-title">deposits were in profit - Cryptonews.net</text></a>
-  <text x="500" y="190" class="muted">Cryptonews.net · 2026-11-21 05:13 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPXzMxX3JYazU4VC03c21yRjZzNU9MUkVheU1OYmpwNzFkNVRHUDRjR2YtV1ZEYWtoRFVMTGxGOEFSZDE2VDhhalpvVlFLdE9rRUdIVHhTYi11N3BJT0hHLTh5dGpZNWY2V2xtdF8xMURpY2l6VmxidVBpWGtZUDNzSjJzSXpaTGJxOTBxaGJheEZaclFIbl9jMGtCbFJoSTM0?oc=5"><text x="500" y="142" class="news-title">Quant Funds Are ‘Shorting’ Bitcoin Below $60K, Jordi</text><text x="500" y="162" class="news-title">Visser Says: Here’s When He’ll Buy More - Yahoo...</text></a>
+  <text x="500" y="190" class="muted">Yahoo Finance · 2026-11-22 05:00 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
