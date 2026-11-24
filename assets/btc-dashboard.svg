@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-11-22: open $60,089.90, close $61,170.10. Latest article: Haseeb Calls Zcash Insurance for Bitcoin in Recent Podcast - Cryptonews.net</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-11-23: open $61,170.10, close $61,214.30. Latest article: Bitcoin’s Next Two Weeks Could Decide The Bear Market Debate: Here’s What Traders Are Watching - Yahoo Finance</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-11-22 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-11-23 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$60,089.90</text>
+  <text x="32" y="194" class="price">$61,170.10</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$61,170.10</text>
+  <text x="252" y="194" class="price">$61,214.30</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBzUTU1SE5RLWlEZUlWblB2MC1SNmUzWkl3TGE1OWtrR2RXdVBtdnhpOVN1TW9GQ3pTbkRiS1dYRWlBVnVuNEI1SzN5akR3WGJ5RUJyV2lKRzlEdw?oc=5"><text x="500" y="142" class="news-title">Haseeb Calls Zcash Insurance for Bitcoin in Recent</text><text x="500" y="162" class="news-title">Podcast - Cryptonews.net</text></a>
-  <text x="500" y="190" class="muted">Cryptonews.net · 2026-11-23 05:12 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOMGxKWVRwYk9CMHA5Y1p4RmtCbDZORmM3RnRsQktHZWFIUVNsbG1DME1IYWdpTWItRFFUOEhKODV6VmNlRjc5MGdyNGlyZExMeXR6MEM0LUIxQ2xrY1ZuNEIwOG5HWm1yQVVQNndYaDVxQ3pKUUtveEhLdVJsdzBpR0JVUXVyT25IamhaSzR6ckZLc1BFOGhTNA?oc=5"><text x="500" y="142" class="news-title">Bitcoin’s Next Two Weeks Could Decide The Bear</text><text x="500" y="162" class="news-title">Market Debate: Here’s What Traders Are Watching -...</text></a>
+  <text x="500" y="190" class="muted">Yahoo Finance · 2026-11-24 04:22 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
