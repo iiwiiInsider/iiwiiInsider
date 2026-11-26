@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title description">
   <title id="title">Bitcoin daily open, close, and latest news</title>
-  <desc id="description">BTC/USD completed daily candle for 2026-11-24: open $61,199.30, close $59,741.20. Latest article: Bitcoin Funds Head for Worst Month as Outflows Near $5 Billion - Bloomberg.com</desc>
+  <desc id="description">BTC/USD completed daily candle for 2026-11-25: open $59,741.30, close $60,368.60. Latest article: Galaxy walks back bitcoin&apos;s June-bottom call, warns of deeper losses below $58,525 - The Block</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     .heading { fill: #f0f6fc; font-size: 17px; font-weight: 700; }
@@ -16,17 +16,17 @@
   <circle cx="57" cy="103" r="25" fill="#f7931a"/>
   <text x="57" y="112" class="coin-mark" text-anchor="middle">₿</text>
   <text x="96" y="94" class="label">LAST COMPLETED UTC CANDLE</text>
-  <text x="96" y="116" class="muted">2026-11-24 · Kraken BTC/USD daily candle</text>
+  <text x="96" y="116" class="muted">2026-11-25 · Kraken BTC/USD daily candle</text>
   <a href="https://github.com/iiwiiInsider/Bitcoin_Price_And_News_Notifiyer">
     <text x="96" y="136" class="muted">BTC monitor: Bitcoin Price &amp; News Notifier ↗</text>
   </a>
   <text x="32" y="164" class="label">OPEN</text>
-  <text x="32" y="194" class="price">$61,199.30</text>
+  <text x="32" y="194" class="price">$59,741.30</text>
   <text x="252" y="164" class="label">CLOSE</text>
-  <text x="252" y="194" class="price">$59,741.20</text>
+  <text x="252" y="194" class="price">$60,368.60</text>
   <rect x="475" y="54" width="461" height="166" rx="10" fill="#161b22" stroke="#30363d"/>
   <text x="500" y="82" class="label">LATEST BITCOIN NEWS</text>
-  <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQVlZrR3hSRnRhN2p1U3ktUnBnZnc2LWJ4Zk1GdWdCaFpsY3Z5emp6LWJ4bXVEZVl6UVVRN1VZcm90cWQ3Vlo2SkthYTZGT3NxbEJ6ZlJSWWFpNFRvcGgyZ1hNYzhQQkV0UFdnUXhkUy1tZ1QwemJfUjVGbmVqQUZtTnRmaU5HY1JWXzZVY0JJeXdWRFRYNnRfVGRQLVV1QmRIMC15aW5ZWGhXM2pjUE80Mjhn?oc=5"><text x="500" y="142" class="news-title">Bitcoin Funds Head for Worst Month as Outflows Near</text><text x="500" y="162" class="news-title">$5 Billion - Bloomberg.com</text></a>
-  <text x="500" y="190" class="muted">Bloomberg.com · 2026-11-25 05:01 UTC</text>
+  <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNNGpMVTRBbEVuakc0eTdOU0w1Z193QjJkRGFCME5MbzhUWlZyWS1JY2ZjVDJnTzZGRjRRSFNGYVhIbXFfVkxvNlNhUkdjY2txTTFLS2lMM2k4U2FmY1pMY1p0REw1S1NfTW9XZVBCYk4tSHp0MFV1S1NpUE5fOFVhYmhVUk5xMnp4amkwM1FIY1hzSnJWcGRj?oc=5"><text x="500" y="142" class="news-title">Galaxy walks back bitcoin&apos;s June-bottom call, warns</text><text x="500" y="162" class="news-title">of deeper losses below $58,525 - The Block</text></a>
+  <text x="500" y="190" class="muted">The Block · 2026-11-26 05:16 UTC</text>
   <text x="500" y="207" class="muted">Feed used by the BTC monitor</text>
 </svg>
